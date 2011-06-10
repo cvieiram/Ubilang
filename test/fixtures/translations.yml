@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_assistance: MyString
+  id_language: 1
+  text: MyString
+  pronunciation: MyString
+
+two:
+  id_assistance: MyString
+  id_language: 1
+  text: MyString
+  pronunciation: MyString

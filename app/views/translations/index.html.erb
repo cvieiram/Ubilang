@@ -1,0 +1,81 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	
+<tittle></tittle>
+
+</head>
+<body class="body" onload="cargar();">
+
+	<div id="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.jpg" alt="Example pic" width=240px height=80px style="border: 0px  solid #ccc;" /></a>
+		</div>
+		<div class="login">
+			<a href="#">Login</a>|<a href="#">Sing up</a>
+		</div>
+	</div>
+	<div class="center" width="50%" align="center"> 
+		<div class="centerFrame" >
+			<a href="javascript:hide('foods','ettiquetes','order', 'translation');">Translation</a> &nbsp; | &nbsp; <a href="javascript:hide('foods','ettiquetes','translation', 'order');" >How to order </a>&nbsp; | &nbsp; <a href="javascript:hide('foods','translation','order', 'ettiquetes');" >Ettiquetes</a>&nbsp; | &nbsp; <a href="javascript:hide('ettiquetes','translation','order', 'foods');" >Types of food</a>
+		</div>
+		<br>
+		<div class="centerFrame" id="order">
+			<b>How to order</b>
+			<br>
+      <%= render @translations %>
+			<br><br>
+		</div>
+		<div class="centerFrame" id="ettiquetes">
+			<b>Chinese dining etiquettes (Hong Kong area)</b>
+			<br>
+			Most East Asian cuisines, with the exception of fusion and Thai, are consumed exclusively with chopsticks. The more Western style cuisines favor cutlery. Some meals are more suited for the use of hands. One notable trend in restaurants is the limited number of napkins provided during a meal. Most mid to low-tier restaurants operate under the assumption that customers bring their own napkins or tissue packs when dining. Standard Western dining etiquettes are rarely observed even in upscale restaurants in Hong Kong.
+			<br>
+			<ul>
+				<li>
+					The Chinese prefer to entertain in public places rather than in their home, especially when entertaining foreigners. If you are invited to a Taiwanese home, it will happen once you have developed a relationship and should be considered a great honour.
+				</li>
+				<li>Arrive on time.</li>
+				<li>Dress well. A great deal of emphasis on appearance. Dressing well gives face to your hosts.</li>
+				<li>Remove your shoes before entering the house</li>
+				<li>Greet the eldest person first</li>
+				<li>Table manners are more ritualized than in many western cultures.</li>
+				<li>The more formal the occasion, the stricter the protocol. If in doubt, watch what others do and emulate their behaviour</li>
+				<li>It is important to learn to use chopsticks.</li>
+			</ul>
+		</div>
+		<div class="centerFrame" id="translation">
+			<b>Translations</b>
+			<br><br>
+			菜单 - Menu<br><br>
+			海鲜汤 - Seafood soup<br><br>
+			鱼翅汤 - Shark's fin soup<br><br>
+			烧鹅 - Roasted goose<br><br>
+			熏猪肉 - Smoked pork<br><br>
+			炒饭 - Fried rice<br><br>
+			蟹 - Crab<br><br>
+			鲜虾 - Fresh shrimps<br><br>
+		</div>
+		<div class="center" id="foods">
+			<b>Types of food</b><br><br>
+
+			Roast goose (specialty), smoked pork, seafood, fish soup.<br>
+			(see <a href="http://www.yungkee.com.hk/menu/menu_set_a-e.html" target=_blank>menu</a>) <br><br>
+
+			Price range: 4/5<br>
+			(see <a href="http://www.yungkee.com.hk/menu/menu_set_a-e.html" target=_blank>menu</a>)<br><br>
+
+			Rating: 4/5<br>
+			(find <a href="http://maps.google.nl/maps?f=q&source=s_q&hl=nl&geocode=&q=yung+kee+32+%E2%80%93+40+Wellington+Street,+hong+kong&aq=&sll=52.469397,5.509644&sspn=5.342119,9.7229&ie=UTF8&hq=yung+kee+32+%E2%80%93+40+Wellington+Street,+hong+kong&hnear=Yung+Kee+Restaurant+Group+Limited,+32+Wellington+St,+Hong+Kong&cid=14660190333048086832&ll=22.284808,114.155674&spn=0.017989,0.038581&z=15&iwloc=A" target=_blank>reviews</a>)<br><br>
+		</div>
+	<div style="clear: both;"> </div>
+	</div>
+
+<div id="footer">
+	<a href="#" target="_blank">Options</a> &nbsp; | &nbsp; <a href="images/center.jpg" target="_blank">About</a>
+</div>
+
+
+
+</body>
+</html>

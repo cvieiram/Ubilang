@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+background: url(../images/earth2.jpg) transparent no-repeat bottom left fixed;
+
+font-size: 14px;
+line-height: 17px;
+color: #222;
+}
+
+a {
+text-decoration: none;
+color: #7DA3DF;
+}
+a:hover {
+text-decoration: underline;
+color: #C3D9FF;
+}
+
+#wrap {
+margin: 20px auto;
+width: 100%;
+}
+
+#header {
+height: 100px;
+
+
+}
+#header h1 { 
+font-size: 25px;
+letter-spacing: -1px;
+padding: 25px 0 0 20px;
+color: #000;
+}
+#header h1 a { 
+color: #aaa;
+text-decoration: none;
+font-weight: 100;
+letter-spacing: -2px;
+}
+#header h1 a:hover {
+color: #111;
+}
+#header h2 {
+font-size: 18px;
+color: #3F89FF;
+padding: 3px 0 0 20px;
+letter-spacing: -1px;
+font-weight: 100;
+}
+
+#menu {
+height: 30px;
+line-height: 30px;
+background: #e0f3fa url(images/menu.jpg) no-repeat;
+}
+#menu ul {
+list-style-type: none;
+padding-left: 30px;
+}
+#menu ul li {
+display: block;
+float: left;
+}
+#menu ul li a {
+padding: 0 20px 0 0;
+text-decoration: none;
+font-weight: 100;
+font-size: 14px;
+color: #fff;
+}
+#menu ul li a:hover {
+color: #000;
+text-decoration: none;
+}
+
+#content {
+background: #ffffff url(images/earth.jpg) ;
+padding: 0 20px;
+}
+
+.right {
+float: right;
+text-align: justify;
+padding-top: 10px;
+
+}
+
+.center {
+float: center;
+position:relative;
+vertical-align:middle;
+padding-top: 20px;
+}
+
+.centerButton {
+float: center;
+text-align:center;
+position:relative;
+padding-top: 20px;
+}
+
+.centerFrame {
+float: center;
+width:600px;
+margin:auto;
+}
+
+.login {
+float: right;
+text-align: right;
+padding-top: 20px;
+padding-right: 20px;
+}
+
+.left {
+float: left;
+padding-top: 10px;
+
+}
+
+.logo {
+float: left;
+padding-top: 10px;
+}
+
+#bottom {
+background : #e0f3fa url(images/bottom.jpg) no-repeat;
+padding: 10px 0;
+}
+
+#footer {
+text-align: right;
+
+padding-right: 20px;
+padding-bottom: 20px;
+font-size: 14px;
+color: #aaa;
+}
+#footer a { color: #aaa; }
+#footer a:hover { color: #111; }
+
+#order{}
