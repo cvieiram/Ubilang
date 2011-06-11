@@ -2,7 +2,7 @@
 -
 <% assistance.translations.each do |var| %>
 
-<%= var.text + "-" + var.pronunciation + "-"%> 
+<%= var.text + "-" %> 
 
 <%if var.language_id == 1%>
 <a href="javascript:prueba('http://translate.google.com/translate_tts?tl=en&q= <%= var.text %>');">LISTEN</a>
