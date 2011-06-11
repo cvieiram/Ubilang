@@ -25,7 +25,10 @@
 		}
 		return '[not supplied]';
 	}
-	
+	function prueba(variable)
+  {
+    var viframe = document.getElementById('aud').src=variable;
+  }
 
 	function cargar()
 	{
