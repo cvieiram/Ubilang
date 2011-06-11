@@ -2,13 +2,15 @@ class AssistancesController < ApplicationController
   respond_to :html, :xml, :json
   
   def index
-    @assistances = Assistance.includes(:translations).where(:country_id => params[:country], :site_id => params[:site])
-    respond_with @assistances
+    @countries = Country.all
+    @sites = Site.all
+    @languages = Language.all
+    @search = Assistance.includes(:translations).search(params[:search])
+    @assistances = @search.all
   end
 
   def show
-        @assistances = Assistance.all
-    respond_with @assistances
+    @assistances = Assistance.includes(:translations).where(:country_id => params[:country], :site_id => params[:site])
 
   end
 

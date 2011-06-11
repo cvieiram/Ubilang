@@ -1,0 +1,16 @@
+<%= form_for @search do |f| %>
+
+  <% f.select :country_id_in,
+      @countries.collect {|p| [ p.name, p.id ] }, :class => 'countries' do |list| %>
+        <%= list.item %>
+        <%= list.label %>
+  <% end %>
+  <% f.select :site_id_in,
+      @sites.collect {|p| [ p.description, p.id ] }, :class => 'sites' do |list| %>
+        <%= list.item %>
+        <%= list.label %>
+  <% end %>
+<br/>
+
+  <p class="button"><%= f.submit "Search" %></p>
+<% end %>

@@ -1,4 +1,4 @@
-1307674416
+1307828131
 AddAssistanceIdFromTranslations	/home/vieira/Ubilang/db/migrate/20110609222710_add_assistance_id_from_translations.rb	class AddAssistanceIdFromTranslations 
 AddCountryIdAndSiteIdAndCategoryIdToAssistances	/home/vieira/Ubilang/db/migrate/20110607223358_add_country_id_and_site_id_and_category_id_to_assistances.rb	class AddCountryIdAndSiteIdAndCategoryIdToAssistances 
 AddIdAssistanceToAssistances	/home/vieira/Ubilang/db/migrate/20110608202455_add_id_assistance_to_assistances.rb	class AddIdAssistanceToAssistances 
@@ -117,6 +117,8 @@ isArray	/home/vieira/Ubilang/public/javascripts/jquery-ui.js	function isArray(a)
 isDisconnected	/home/vieira/Ubilang/public/javascripts/jquery.js	function isDisconnected( node )
 isEmptyDataObject	/home/vieira/Ubilang/public/javascripts/jquery.js	function isEmptyDataObject( obj )
 jQuerySubclass	/home/vieira/Ubilang/public/javascripts/jquery.js	function jQuerySubclass( selector, context )
+lang_dest	/home/vieira/Ubilang/app/models/assistance.rb	    attr_accessor :lang_dest
+lang_or	/home/vieira/Ubilang/app/models/assistance.rb	    attr_accessor :lang_or
 liveConvert	/home/vieira/Ubilang/public/javascripts/jquery.js	function liveConvert( type, selector )
 liveHandler	/home/vieira/Ubilang/public/javascripts/jquery.js	function liveHandler( event )
 new	/home/vieira/Ubilang/app/controllers/assistances_controller.rb	  def new

@@ -1,3 +1,4 @@
+
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
@@ -19,7 +20,11 @@ gem 'make_permalink'
 #javascript library
 gem 'jquery-rails'
 
+gem 'formtastic', '~> 1.2.3'
 
+gem "meta_where"
+
+gem "meta_search"
 # Use unicorn as the web server
 # gem 'unicorn'
 

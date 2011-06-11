@@ -1,5 +1,3 @@
-
-
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <html>
 <head>
@@ -9,48 +7,49 @@
 </head>
 <body class="body" onload="cargar();">
 
-	<div id="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/logo.jpg" alt="Example pic" width=240px height=80px style="border: 0px  solid #ccc;" /></a>
-		</div>
-		<div class="login">
-			<a href="#">Login</a>|<a href="#">Sing up</a>
-		</div>
-	</div>
+  <%= render :partial =>'shared/header'%>
 	<div class="center" width="50%" align="center"> 
-		<div class="centerFrame" >
+		<div class="centerFrame" id="filter">
+			<b>Choose your location</b>
+			<br>
+      <%= render :partial =>'form'%>
+      <audio id="audio1" src="http://translate.google.com/translate_tts?tl=es&q=nacional" controls preload="auto" autobuffer>
+        </audio>
+			<br><br>
+    </div>
+    
+    <div class="centerFrame" >
 			<a href="javascript:hide('foods','ettiquetes','order', 'translation');">Translation</a> &nbsp; | &nbsp; <a href="javascript:hide('foods','ettiquetes','translation', 'order');" >How to order </a>&nbsp; | &nbsp; <a href="javascript:hide('foods','translation','order', 'ettiquetes');" >Ettiquetes</a>&nbsp; | &nbsp; <a href="javascript:hide('ettiquetes','translation','order', 'foods');" >Types of food</a>
 		</div>
 		<br>
-		<div class="centerFrame" id="order">
+    <br>
+  
+    <div class="centerFrame" id="order">
 			<b>How to order</b>
 			<br>
-      <%= render @assistances.where(:category_id => 1 )%>
+      <%= render @search.where(:category_id => 1 )%>
 			<br><br>
 		</div>
 		<div class="centerFrame" id="ettiquetes">
 			<b>Etiquettes</b>
 			<br>
 
-      <%= render @assistances.where(:category_id => 2)%>
+      <%= render @search.where(:category_id => 2)%>
 		</div>
 		<div class="centerFrame" id="translation">
 			<b>Translations</b>
 			<br><br>
-      <%= render @assistances.where(:category_id => 3)%>
+      <%= render @search.where(:category_id => 3)%>
       
 		</div>
 		<div class="center" id="foods">
 			<b>Classification</b><br><br>
-      <%= render @assistances.where(:category_id => 4)%>
-      
+      <%= render @search.where(:category_id => 4)%>
 		</div>
 	<div style="clear: both;"> </div>
 	</div>
 
-<div id="footer">
-	<a href="#" target="_blank">Options</a> &nbsp; | &nbsp; <a href="images/center.jpg" target="_blank">About</a>
-</div>
+<%= render :partial =>'shared/footer'%>
 
 
 

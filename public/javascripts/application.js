@@ -26,9 +26,11 @@
 		return '[not supplied]';
 	}
 	
+
 	function cargar()
 	{
 		var param=getParameter('help');
+
 		if(param=="o")
 		{
 			hide('foods','ettiquetes','translation', 'order')

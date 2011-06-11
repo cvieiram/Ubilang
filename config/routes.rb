@@ -1,3 +1,4 @@
+
 Ubilang::Application.routes.draw do
 
   root :to => "translations#index"
@@ -7,7 +8,7 @@ Ubilang::Application.routes.draw do
     resources :languages
     resources :sites
   end
-
+  
   resources :translations do
     resources :assistances
     resources :languages

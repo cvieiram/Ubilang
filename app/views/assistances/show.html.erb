@@ -1,2 +1,47 @@
-<h1>Assistances#show</h1>
-<p><%= render @assistances %></p>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	
+<tittle></tittle>
+
+</head>
+<body class="body" onload="cargar();">
+
+  <%= render :partial =>'shared/header'%>
+	<div class="center" width="50%" align="center"> 
+		<div class="centerFrame" >
+			<a href="javascript:hide('foods','ettiquetes','order', 'translation');">Translation</a> &nbsp; | &nbsp; <a href="javascript:hide('foods','ettiquetes','translation', 'order');" >How to order </a>&nbsp; | &nbsp; <a href="javascript:hide('foods','translation','order', 'ettiquetes');" >Ettiquetes</a>&nbsp; | &nbsp; <a href="javascript:hide('ettiquetes','translation','order', 'foods');" >Types of food</a>
+		</div>
+		<br>
+		<div class="centerFrame" id="order">
+			<b>How to order</b>
+			<br>
+      <%= render @assistances.where(:category_id => 1 )%>
+			<br><br>
+		</div>
+		<div class="centerFrame" id="ettiquetes">
+			<b>Etiquettes</b>
+			<br>
+
+      <%= render @assistances.where(:category_id => 2)%>
+		</div>
+		<div class="centerFrame" id="translation">
+			<b>Translations</b>
+			<br><br>
+      <%= render @assistances.where(:category_id => 3)%>
+      
+		</div>
+		<div class="center" id="foods">
+			<b>Classification</b><br><br>
+      <%= render @assistances.where(:category_id => 4)%>
+      
+		</div>
+	<div style="clear: both;"> </div>
+	</div>
+
+<%= render :partial =>'shared/footer'%>
+
+
+
+</body>
+</html>
