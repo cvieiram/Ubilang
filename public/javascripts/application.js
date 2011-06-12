@@ -28,6 +28,7 @@
 	}
 	function prueba(variable)
   {
+    alert(variable);
     var viframe = document.getElementById('aud').src=variable;
   }
 
@@ -50,16 +51,12 @@
 				alert(error.code + ' ' + error.message);
 			}
  
-			function showLocation(position) {
-				geoinfo.innerHTML='<p>Latitude: ' + position.coords.latitude + '</p>' 
+      function showLocation(position) { 
+				document.getElementById("geoinfo").innerHTML='<p>Latitude: ' + position.coords.latitude + '</p>' 
 				+ '<p>Longitude: ' + position.coords.longitude + '</p>' 
-				+ '<p>Accuracy: ' + position.coords.accuracy + '</p>' 
-				+ '<p>Altitude: ' + position.coords.altitude + '</p>' 
-				+ '<p>Altitude accuracy: ' + position.coords.altitudeAccuracy + '</p>' 
-				+ '<p>Speed: ' + position.coords.speed + '</p>' 
-				+ '<p>Heading: ' + position.coords.heading + '</p>';
-        
+				+ '<p>Accuracy: ' + position.coords.accuracy + '</p>';
         document.getElementById("map").src="http://maps.google.com/maps/api/staticmap?center="+position.coords.latitude+","+position.coords.longitude+"&zoom=14&size=300x200&maptype=roadmap&markers=color:green|label:G|"+position.coords.latitude+","+position.coords.longitude+"&sensor=true";
+
 			}
       
 
