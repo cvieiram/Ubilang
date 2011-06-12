@@ -14,6 +14,7 @@
 		 hidestuff(name3);
 		 showstuff(name4);
 	}
+  
 	function getParameter( parameterName ) {
 		var queryString = window.location.search.substring(1);
 		var parameters = queryString.split('&');
@@ -29,6 +30,38 @@
   {
     var viframe = document.getElementById('aud').src=variable;
   }
+
+	function cargarUbicacion()
+  {
+    if (navigator.geolocation) {  
+				getLocation();
+			} else {  
+				alert("Sorry, your device or browser software does not appear to support geolocation services.");
+			}  
+	}
+
+
+  function getLocation() {
+				// Get location no more than 10 minutes old. 600000 ms = 10 minutes.
+				navigator.geolocation.getCurrentPosition(showLocation, showError, {enableHighAccuracy:true,maximumAge:600000});
+			}
+ 
+			function showError(error) {
+				alert(error.code + ' ' + error.message);
+			}
+ 
+			function showLocation(position) {
+				geoinfo.innerHTML='<p>Latitude: ' + position.coords.latitude + '</p>' 
+				+ '<p>Longitude: ' + position.coords.longitude + '</p>' 
+				+ '<p>Accuracy: ' + position.coords.accuracy + '</p>' 
+				+ '<p>Altitude: ' + position.coords.altitude + '</p>' 
+				+ '<p>Altitude accuracy: ' + position.coords.altitudeAccuracy + '</p>' 
+				+ '<p>Speed: ' + position.coords.speed + '</p>' 
+				+ '<p>Heading: ' + position.coords.heading + '</p>';
+        
+        document.getElementById("map").src="http://maps.google.com/maps/api/staticmap?center="+position.coords.latitude+","+position.coords.longitude+"&zoom=14&size=300x200&maptype=roadmap&markers=color:green|label:G|"+position.coords.latitude+","+position.coords.longitude+"&sensor=true";
+			}
+      
 
 	function cargar()
 	{

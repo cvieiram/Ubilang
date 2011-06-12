@@ -1,6 +1,8 @@
 
 Ubilang::Application.routes.draw do
 
+  resources :locations
+
   root :to => "translations#index"
   resources :assistances do
     resources :categories

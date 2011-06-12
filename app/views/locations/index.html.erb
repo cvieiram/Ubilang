@@ -1,0 +1,67 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<html>
+<head>
+	
+<tittle></tittle>
+
+</head>
+<body class="body" onload="cargarUbicacion();">
+
+  <%= render :partial =>'shared/header'%>
+  <div class="center" width="50%" align="center">     
+    <div class="centerFrame"> 
+		<div class="center">
+			<div class="left">
+			<a href="rtap22.html"><img src="images/SurvivalKit.png" alt="Example pic" width=160px height=80px /></a></div>
+			<div class="right">
+			<a href="rtap21.html"><img src="images/PartnerAssistance.png" alt="Example pic" width=160px height=80px /></a></div>
+		</div>
+				<div style="clear: both;"> </div>
+		<div class="centerButton" id="determined">
+			<img src="images/DeterminingLocationAnimateStatic.gif" alt="Example pic" width=200px height=60px  style="border: 0px  solid #ccc;" />
+      <br/>
+<img id="map" src="http://maps.google.com/maps/api/staticmap?center=6.233413,-75.589927&zoom=1&size=300x200&maptype=roadmap&sensor=false" />
+
+		<div id="geoinfo"></div>
+		</div>
+	</div>
+	<div style="clear: both;"> </div>
+	</div>
+
+<%= render :partial =>'shared/footer'%>
+
+
+
+</body>
+</html>
+
+<!--
+<h1>Listing locations</h1>
+
+<table>
+  <tr>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @locations.each do |location| %>
+  <tr>
+    <td><%= location.latitude %></td>
+    <td><%= location.longitude %></td>
+    <td><%= location.description %></td>
+    <td><%= link_to 'Show', location %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Location', new_location_path %>
+-->
