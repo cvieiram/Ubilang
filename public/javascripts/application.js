@@ -29,9 +29,8 @@
 	function prueba(variable)
   {
     alert(variable);
-//    var viframe = document.getElementById('aud').src=variable.replace("q= ","q=+").replace(" ", "%20");
-    window.location=variable;
-    alert("entra");
+    var viframe = document.getElementById('aud').src="http://www.eafit.edu.co";
+//    window.location=variable;
   }
 
 	function cargarUbicacion()
