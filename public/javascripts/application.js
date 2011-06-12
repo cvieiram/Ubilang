@@ -30,6 +30,7 @@
   {
     alert(variable.replace("q= ","q=+").replace(" ", "%20"));
     var viframe = document.getElementById('aud').src=variable.replace("q= ","q=+").replace(" ", "%20");
+    alert("entra");
   }
 
 	function cargarUbicacion()
