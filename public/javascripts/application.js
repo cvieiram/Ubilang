@@ -28,8 +28,8 @@
 	}
 	function prueba(variable)
   {
-    alert(variable);
-    var viframe = document.getElementById('aud').src=variable;
+    alert(variable.replace("q= ","q=+").replace(" ", "%20"));
+    var viframe = document.getElementById('aud').src=variable.replace("q= ","q=+").replace(" ", "%20");
   }
 
 	function cargarUbicacion()
