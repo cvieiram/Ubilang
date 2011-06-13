@@ -5,8 +5,8 @@
 <%= var.text + "-" %> 
 
 <%if var.language_id == 1%>
-<a href="javascript:prueba('http://translate.google.com/translate_tts?tl=en&q= <%= var.text %>');">LISTEN</a>
+<a href="javascript:prueba('http://translate.google.com/translate_tts?tl=en&q=<%= var.text %>');">LISTEN</a>
 <%else%>
-<a href="javascript:prueba('http://translate.google.com/translate_tts?tl=es&q= <%= var.text %>');">ESCUCHAR</a>
+<a href="javascript:prueba('http://translate.google.com/translate_tts?tl=es&q=<%= var.text %>');">ESCUCHAR</a>
 <%end%>
 <% end%>
