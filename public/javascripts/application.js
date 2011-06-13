@@ -28,8 +28,8 @@
 	}
 	function prueba(variable)
   {
-    alert(variable);
-    var viframe = document.getElementById('aud').src="http://www.eafit.edu.co";
+
+    var viframe = document.getElementById('aud').src=variable;
 //    window.location=variable;
   }
 
